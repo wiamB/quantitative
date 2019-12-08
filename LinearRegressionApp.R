@@ -3,7 +3,7 @@ set.seed(19620808)
 setwd("./Desktop/Spring2019AUI/Quanti")
 baseball <- read.csv("MLBPitching.csv")
 model1 <- lm(baseball$R.IP ~ baseball$SO.IP)
-
+#wiam this is nice
 summary(model1)
 mean(model1$residuals)
 plot(model1$fitted.values, model1$residuals)
